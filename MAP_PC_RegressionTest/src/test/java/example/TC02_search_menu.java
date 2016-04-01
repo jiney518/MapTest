@@ -167,7 +167,7 @@ public class TC02_search_menu {
 	}
 	
 	
-  @BeforeTest
+ @BeforeTest
   public void beforeTest() {
 	  
 		System.setProperty("webdriver.ie.driver", "C:\\Users\\Administrator\\Desktop\\jiney\\IEDriverServer.exe");

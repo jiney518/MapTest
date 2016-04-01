@@ -25,6 +25,22 @@ public class TC01_indoor_map {
 	
 	private static WebDriver driver;	
 	
+	
+	  @BeforeTest
+	  public void beforeTest() {
+			System.setProperty("webdriver.ie.driver", "C:\\Users\\Administrator\\Desktop\\jiney\\IEDriverServer.exe");
+			DesiredCapabilities dc = DesiredCapabilities.internetExplorer();
+			dc.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
+			driver = new InternetExplorerDriver(dc);
+			driver.get("http://stg.map.naver.com");
+			driver.manage().window().maximize();
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); 		
+			System.out.println("IE ¿ÀÇÂ ¼º°ø");
+		  
+	  }
+
+
+	
   @Test
   public void tc001() throws Exception  {
 		
@@ -156,18 +172,7 @@ public class TC01_indoor_map {
 		}
 	}
 	
-  @BeforeTest
-  public void beforeTest() {
-		System.setProperty("webdriver.ie.driver", "C:\\Users\\Administrator\\Desktop\\jiney\\IEDriverServer.exe");
-		DesiredCapabilities dc = DesiredCapabilities.internetExplorer();
-		dc.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
-		driver = new InternetExplorerDriver(dc);
-		driver.get("http://stg.map.naver.com");
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); 		
-		System.out.println("IE ¿ÀÇÂ ¼º°ø");
-	  
-  }
+
 
   @AfterTest
   public void afterTest() {

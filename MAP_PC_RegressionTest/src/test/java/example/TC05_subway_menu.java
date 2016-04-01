@@ -68,7 +68,7 @@ public class TC05_subway_menu {
 		
 	}
 	
-  @BeforeTest
+ @BeforeTest
 	public void openBrower(){
 		
 		System.setProperty("webdriver.ie.driver", "C:\\Users\\Administrator\\Desktop\\jiney\\IEDriverServer.exe");

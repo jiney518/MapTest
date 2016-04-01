@@ -400,7 +400,7 @@ public class TC03_route_menu {
 					+ e.getStackTrace());
 		}
 	}
-  @BeforeTest
+ @BeforeTest
 	public void openBrower(){
 		
 		System.setProperty("webdriver.ie.driver", "C:\\Users\\Administrator\\Desktop\\jiney\\IEDriverServer.exe");
