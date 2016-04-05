@@ -80,6 +80,7 @@ public class TC02_search_menu {
 		WebElement duplicationBox =driver.findElement(By.xpath("//div[@id='panel']/div[2]/div[1]/div[2]/div[1]/div[3]/h2/select"));		
 		Select dropDown1 = new Select(duplicationBox);
 		dropDown1.selectByIndex(2);
+		System.out.println("중복지역명 확인");
 		
 		//지역별 옵션
 		driver.findElement(By.xpath("//div[@id='panel']/div[2]/div[1]/div[2]/div[1]/div[3]/div[1]/a[1]/span")).click();
@@ -124,6 +125,7 @@ public class TC02_search_menu {
 		driver.findElement(By.id("search-input")).sendKeys("8106");
 		driver.findElement(By.xpath("/html/body/div[3]/div[1]/div[1]/fieldset/button")).click();
 		driver.findElement(By.xpath("//div[@id='panel']/div[2]/div[1]/div[2]/div[2]/ul/li/div/div[1]/a")).click();
+		System.out.println("버스 검색 확인");
 		
 	}
 	

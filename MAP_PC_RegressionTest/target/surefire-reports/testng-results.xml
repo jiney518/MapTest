@@ -1,31 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="13" total="14" passed="1">
+<testng-results skipped="0" failed="12" total="14" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="212601" started-at="2016-04-05T07:56:27Z" finished-at="2016-04-05T07:59:59Z">
+  <suite name="Suite" duration-ms="278138" started-at="2016-04-05T09:02:27Z" finished-at="2016-04-05T09:07:05Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="212601" started-at="2016-04-05T07:56:27Z" finished-at="2016-04-05T07:59:59Z">
+    <test name="Test" duration-ms="278138" started-at="2016-04-05T09:02:27Z" finished-at="2016-04-05T09:07:05Z">
       <class name="example.TC05_subway_menu">
-        <test-method status="FAIL" signature="tc010()[pri:0, instance:example.TC05_subway_menu@5a61f5df]" name="tc010" duration-ms="1046" started-at="2016-04-05T16:59:56Z" finished-at="2016-04-05T16:59:57Z">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method status="FAIL" signature="tc010()[pri:0, instance:example.TC05_subway_menu@5a61f5df]" name="tc010" duration-ms="4" started-at="2016-04-05T18:07:05Z" finished-at="2016-04-05T18:07:05Z">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[Cannot click on element (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 681 milliseconds
+              <![CDATA[Unable to find element on closed window (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4 milliseconds
 Build info: version: '2.48.0', revision: 'b7b081a4f1289f17e8ecd38bc67e137c2a12e34a', time: '2015-10-07 09:50:14'
 System info: host: 'WIN-4FMBHHT0AJI', ip: '10.12.45.232', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:45105/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: 9e95647b-ad75-4aea-a910-dfb8eaf47631]]>
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:4168/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 0961c9ae-5c6c-47c5-92ea-1efc258a0f3b
+*** Element info: {Using=xpath, value=//div[@id='nav']/ul/li[4]/a}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Cannot click on element (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 681 milliseconds
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to find element on closed window (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4 milliseconds
 Build info: version: '2.48.0', revision: 'b7b081a4f1289f17e8ecd38bc67e137c2a12e34a', time: '2015-10-07 09:50:14'
 System info: host: 'WIN-4FMBHHT0AJI', ip: '10.12.45.232', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:45105/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: 9e95647b-ad75-4aea-a910-dfb8eaf47631
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:4168/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 0961c9ae-5c6c-47c5-92ea-1efc258a0f3b
+*** Element info: {Using=xpath, value=//div[@id='nav']/ul/li[4]/a}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -33,8 +35,10 @@ Session ID: 9e95647b-ad75-4aea-a910-dfb8eaf47631
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:326)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:490)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:345)
 	at example.TC05_subway_menu.tc010(TC05_subway_menu.java:23)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -71,13 +75,13 @@ Session ID: 9e95647b-ad75-4aea-a910-dfb8eaf47631
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc010 -->
       </class> <!-- example.TC05_subway_menu -->
       <class name="example.TC02_search_menu">
-        <test-method status="FAIL" signature="tc007()[pri:0, instance:example.TC02_search_menu@54a097cc]" name="tc007" duration-ms="13967" started-at="2016-04-05T16:57:52Z" finished-at="2016-04-05T16:58:06Z">
+        <test-method status="FAIL" signature="tc007()[pri:0, instance:example.TC02_search_menu@54a097cc]" name="tc007" duration-ms="13773" started-at="2016-04-05T18:04:03Z" finished-at="2016-04-05T18:04:17Z">
           <exception class="junit.framework.ComparisonFailure">
             <message>
               <![CDATA[expected:<용인대학교 박물관> but was:<길토래비자연학교>]]>
@@ -126,33 +130,31 @@ Session ID: 9e95647b-ad75-4aea-a910-dfb8eaf47631
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc007 -->
-        <test-method status="PASS" signature="tc008()[pri:0, instance:example.TC02_search_menu@54a097cc]" name="tc008" duration-ms="65483" started-at="2016-04-05T16:58:06Z" finished-at="2016-04-05T16:59:12Z">
+        <test-method status="PASS" signature="tc008()[pri:0, instance:example.TC02_search_menu@54a097cc]" name="tc008" duration-ms="66112" started-at="2016-04-05T18:04:17Z" finished-at="2016-04-05T18:05:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc008 -->
       </class> <!-- example.TC02_search_menu -->
       <class name="example.TC06_endPage_detail">
-        <test-method status="FAIL" signature="tc011()[pri:0, instance:example.TC06_endPage_detail@7225790e]" name="tc011" duration-ms="2502" started-at="2016-04-05T16:59:57Z" finished-at="2016-04-05T16:59:59Z">
+        <test-method status="FAIL" signature="tc011()[pri:0, instance:example.TC06_endPage_detail@7225790e]" name="tc011" duration-ms="12" started-at="2016-04-05T18:07:05Z" finished-at="2016-04-05T18:07:05Z">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[Unable to find element on closed window (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 29 milliseconds
+              <![CDATA[Window is closed (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12 milliseconds
 Build info: version: '2.48.0', revision: 'b7b081a4f1289f17e8ecd38bc67e137c2a12e34a', time: '2015-10-07 09:50:14'
 System info: host: 'WIN-4FMBHHT0AJI', ip: '10.12.45.232', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:18706/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: 12c59a71-a97b-4e74-9a68-49f7c0d1253e
-*** Element info: {Using=xpath, value=/html/body/div[3]/div[1]/div[1]/fieldset/button}]]>
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:16278/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 2e9c6fb5-01f9-4cf0-9565-e52eba4bb8a8]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to find element on closed window (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 29 milliseconds
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: Window is closed (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12 milliseconds
 Build info: version: '2.48.0', revision: 'b7b081a4f1289f17e8ecd38bc67e137c2a12e34a', time: '2015-10-07 09:50:14'
 System info: host: 'WIN-4FMBHHT0AJI', ip: '10.12.45.232', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:18706/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: 12c59a71-a97b-4e74-9a68-49f7c0d1253e
-*** Element info: {Using=xpath, value=/html/body/div[3]/div[1]/div[1]/fieldset/button}
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:16278/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 2e9c6fb5-01f9-4cf0-9565-e52eba4bb8a8
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -160,11 +162,9 @@ Session ID: 12c59a71-a97b-4e74-9a68-49f7c0d1253e
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:490)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:345)
-	at example.TC06_endPage_detail.tc011(TC06_endPage_detail.java:27)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:670)
+	at org.openqa.selenium.remote.RemoteWebDriver.getWindowHandle(RemoteWebDriver.java:537)
+	at example.TC06_endPage_detail.tc011(TC06_endPage_detail.java:23)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -206,25 +206,27 @@ Session ID: 12c59a71-a97b-4e74-9a68-49f7c0d1253e
         </test-method> <!-- tc011 -->
       </class> <!-- example.TC06_endPage_detail -->
       <class name="example.TC04_bus_menu">
-        <test-method status="FAIL" signature="tc009()[pri:0, instance:example.TC04_bus_menu@36f6e879]" name="tc009" duration-ms="1996" started-at="2016-04-05T16:59:54Z" finished-at="2016-04-05T16:59:56Z">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method status="FAIL" signature="tc009()[pri:0, instance:example.TC04_bus_menu@36f6e879]" name="tc009" duration-ms="3" started-at="2016-04-05T18:07:05Z" finished-at="2016-04-05T18:07:05Z">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[Cannot click on element (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 747 milliseconds
+              <![CDATA[Unable to find element on closed window (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2 milliseconds
 Build info: version: '2.48.0', revision: 'b7b081a4f1289f17e8ecd38bc67e137c2a12e34a', time: '2015-10-07 09:50:14'
 System info: host: 'WIN-4FMBHHT0AJI', ip: '10.12.45.232', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:4945/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: 3b548fa5-f51a-4c44-9233-af2e36f87847]]>
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:23429/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: f8929c0b-b3c7-48fa-8d42-18812d8d87db
+*** Element info: {Using=xpath, value=//div[@id='nav']/ul/li[3]/a}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Cannot click on element (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 747 milliseconds
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to find element on closed window (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2 milliseconds
 Build info: version: '2.48.0', revision: 'b7b081a4f1289f17e8ecd38bc67e137c2a12e34a', time: '2015-10-07 09:50:14'
 System info: host: 'WIN-4FMBHHT0AJI', ip: '10.12.45.232', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:4945/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: 3b548fa5-f51a-4c44-9233-af2e36f87847
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:23429/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: f8929c0b-b3c7-48fa-8d42-18812d8d87db
+*** Element info: {Using=xpath, value=//div[@id='nav']/ul/li[3]/a}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -232,8 +234,10 @@ Session ID: 3b548fa5-f51a-4c44-9233-af2e36f87847
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:326)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:490)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:345)
 	at example.TC04_bus_menu.tc009(TC04_bus_menu.java:30)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -270,31 +274,31 @@ Session ID: 3b548fa5-f51a-4c44-9233-af2e36f87847
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc009 -->
       </class> <!-- example.TC04_bus_menu -->
       <class name="example.TC07_endPage_CP_Link">
-        <test-method status="FAIL" signature="tc012()[pri:0, instance:example.TC07_endPage_CP_Link@531be3c5]" name="tc012" duration-ms="25" started-at="2016-04-05T16:59:59Z" finished-at="2016-04-05T16:59:59Z">
+        <test-method status="FAIL" signature="tc012()[pri:0, instance:example.TC07_endPage_CP_Link@531be3c5]" name="tc012" duration-ms="14" started-at="2016-04-05T18:07:05Z" finished-at="2016-04-05T18:07:05Z">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[Window is closed (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 24 milliseconds
+Command duration or timeout: 13 milliseconds
 Build info: version: '2.48.0', revision: 'b7b081a4f1289f17e8ecd38bc67e137c2a12e34a', time: '2015-10-07 09:50:14'
 System info: host: 'WIN-4FMBHHT0AJI', ip: '10.12.45.232', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:28074/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: f6145af5-c10a-4a71-a3a6-7f6aa63860c4]]>
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:33758/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 674482ac-484b-4fb0-bcb8-4a9f65eb1457]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchWindowException: Window is closed (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 24 milliseconds
+Command duration or timeout: 13 milliseconds
 Build info: version: '2.48.0', revision: 'b7b081a4f1289f17e8ecd38bc67e137c2a12e34a', time: '2015-10-07 09:50:14'
 System info: host: 'WIN-4FMBHHT0AJI', ip: '10.12.45.232', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:28074/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: f6145af5-c10a-4a71-a3a6-7f6aa63860c4
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:33758/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 674482ac-484b-4fb0-bcb8-4a9f65eb1457
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -344,25 +348,25 @@ Session ID: f6145af5-c10a-4a71-a3a6-7f6aa63860c4
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc012 -->
-        <test-method status="FAIL" signature="tc013()[pri:0, instance:example.TC07_endPage_CP_Link@531be3c5]" name="tc013" duration-ms="14" started-at="2016-04-05T16:59:59Z" finished-at="2016-04-05T16:59:59Z">
+        <test-method status="FAIL" signature="tc013()[pri:0, instance:example.TC07_endPage_CP_Link@531be3c5]" name="tc013" duration-ms="16" started-at="2016-04-05T18:07:05Z" finished-at="2016-04-05T18:07:05Z">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[Window is closed (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 14 milliseconds
+Command duration or timeout: 15 milliseconds
 Build info: version: '2.48.0', revision: 'b7b081a4f1289f17e8ecd38bc67e137c2a12e34a', time: '2015-10-07 09:50:14'
 System info: host: 'WIN-4FMBHHT0AJI', ip: '10.12.45.232', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:28074/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: f6145af5-c10a-4a71-a3a6-7f6aa63860c4]]>
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:33758/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 674482ac-484b-4fb0-bcb8-4a9f65eb1457]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchWindowException: Window is closed (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 14 milliseconds
+Command duration or timeout: 15 milliseconds
 Build info: version: '2.48.0', revision: 'b7b081a4f1289f17e8ecd38bc67e137c2a12e34a', time: '2015-10-07 09:50:14'
 System info: host: 'WIN-4FMBHHT0AJI', ip: '10.12.45.232', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:28074/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: f6145af5-c10a-4a71-a3a6-7f6aa63860c4
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:33758/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 674482ac-484b-4fb0-bcb8-4a9f65eb1457
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -412,7 +416,7 @@ Session ID: f6145af5-c10a-4a71-a3a6-7f6aa63860c4
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc013 -->
-        <test-method status="FAIL" signature="tc014()[pri:0, instance:example.TC07_endPage_CP_Link@531be3c5]" name="tc014" duration-ms="14" started-at="2016-04-05T16:59:59Z" finished-at="2016-04-05T16:59:59Z">
+        <test-method status="FAIL" signature="tc014()[pri:0, instance:example.TC07_endPage_CP_Link@531be3c5]" name="tc014" duration-ms="14" started-at="2016-04-05T18:07:05Z" finished-at="2016-04-05T18:07:05Z">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[Window is closed (WARNING: The server did not provide any stacktrace information)
@@ -420,8 +424,8 @@ Command duration or timeout: 14 milliseconds
 Build info: version: '2.48.0', revision: 'b7b081a4f1289f17e8ecd38bc67e137c2a12e34a', time: '2015-10-07 09:50:14'
 System info: host: 'WIN-4FMBHHT0AJI', ip: '10.12.45.232', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:28074/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: f6145af5-c10a-4a71-a3a6-7f6aa63860c4]]>
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:33758/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 674482ac-484b-4fb0-bcb8-4a9f65eb1457]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchWindowException: Window is closed (WARNING: The server did not provide any stacktrace information)
@@ -429,8 +433,8 @@ Command duration or timeout: 14 milliseconds
 Build info: version: '2.48.0', revision: 'b7b081a4f1289f17e8ecd38bc67e137c2a12e34a', time: '2015-10-07 09:50:14'
 System info: host: 'WIN-4FMBHHT0AJI', ip: '10.12.45.232', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:28074/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: f6145af5-c10a-4a71-a3a6-7f6aa63860c4
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:33758/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 674482ac-484b-4fb0-bcb8-4a9f65eb1457
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -482,131 +486,61 @@ Session ID: f6145af5-c10a-4a71-a3a6-7f6aa63860c4
         </test-method> <!-- tc014 -->
       </class> <!-- example.TC07_endPage_CP_Link -->
       <class name="example.TC01_indoor_map">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.TC01_indoor_map@2d554825]" name="beforeTest" is-config="true" duration-ms="4492" started-at="2016-04-05T16:56:27Z" finished-at="2016-04-05T16:56:31Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.TC01_indoor_map@2d554825]" name="beforeTest" is-config="true" duration-ms="5240" started-at="2016-04-05T18:02:27Z" finished-at="2016-04-05T18:02:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.TC02_search_menu@54a097cc]" name="beforeTest" is-config="true" duration-ms="3457" started-at="2016-04-05T16:56:31Z" finished-at="2016-04-05T16:56:35Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.TC02_search_menu@54a097cc]" name="beforeTest" is-config="true" duration-ms="3487" started-at="2016-04-05T18:02:32Z" finished-at="2016-04-05T18:02:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="openBrower()[pri:0, instance:example.TC03_route_menu@3551a94]" name="openBrower" is-config="true" duration-ms="3740" started-at="2016-04-05T16:56:35Z" finished-at="2016-04-05T16:56:38Z">
+        <test-method status="PASS" signature="openBrower()[pri:0, instance:example.TC03_route_menu@3551a94]" name="openBrower" is-config="true" duration-ms="3538" started-at="2016-04-05T18:02:35Z" finished-at="2016-04-05T18:02:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrower -->
-        <test-method status="PASS" signature="openBrower()[pri:0, instance:example.TC04_bus_menu@36f6e879]" name="openBrower" is-config="true" duration-ms="3501" started-at="2016-04-05T16:56:38Z" finished-at="2016-04-05T16:56:42Z">
+        <test-method status="PASS" signature="openBrower()[pri:0, instance:example.TC04_bus_menu@36f6e879]" name="openBrower" is-config="true" duration-ms="3834" started-at="2016-04-05T18:02:39Z" finished-at="2016-04-05T18:02:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrower -->
-        <test-method status="PASS" signature="openBrower()[pri:0, instance:example.TC05_subway_menu@5a61f5df]" name="openBrower" is-config="true" duration-ms="3823" started-at="2016-04-05T16:56:42Z" finished-at="2016-04-05T16:56:46Z">
+        <test-method status="PASS" signature="openBrower()[pri:0, instance:example.TC05_subway_menu@5a61f5df]" name="openBrower" is-config="true" duration-ms="3653" started-at="2016-04-05T18:02:43Z" finished-at="2016-04-05T18:02:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrower -->
-        <test-method status="PASS" signature="openBrower()[pri:0, instance:example.TC06_endPage_detail@7225790e]" name="openBrower" is-config="true" duration-ms="3802" started-at="2016-04-05T16:56:46Z" finished-at="2016-04-05T16:56:49Z">
+        <test-method status="PASS" signature="openBrower()[pri:0, instance:example.TC06_endPage_detail@7225790e]" name="openBrower" is-config="true" duration-ms="3996" started-at="2016-04-05T18:02:46Z" finished-at="2016-04-05T18:02:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrower -->
-        <test-method status="PASS" signature="openBrower()[pri:0, instance:example.TC07_endPage_CP_Link@531be3c5]" name="openBrower" is-config="true" duration-ms="3686" started-at="2016-04-05T16:56:49Z" finished-at="2016-04-05T16:56:53Z">
+        <test-method status="PASS" signature="openBrower()[pri:0, instance:example.TC07_endPage_CP_Link@531be3c5]" name="openBrower" is-config="true" duration-ms="3981" started-at="2016-04-05T18:02:50Z" finished-at="2016-04-05T18:02:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrower -->
-        <test-method status="FAIL" signature="tc001()[pri:0, instance:example.TC01_indoor_map@2d554825]" name="tc001" duration-ms="59352" started-at="2016-04-05T16:56:53Z" finished-at="2016-04-05T16:57:52Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to find element with xpath == //div[@id='_title']/h1 (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.30 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.48.0', revision: 'b7b081a4f1289f17e8ecd38bc67e137c2a12e34a', time: '2015-10-07 09:50:14'
-System info: host: 'WIN-4FMBHHT0AJI', ip: '10.12.45.232', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:12109/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: 0e5e5208-2639-46c1-ac83-0ff61e4cb051
-*** Element info: {Using=xpath, value=//div[@id='_title']/h1}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with xpath == //div[@id='_title']/h1 (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.30 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.48.0', revision: 'b7b081a4f1289f17e8ecd38bc67e137c2a12e34a', time: '2015-10-07 09:50:14'
-System info: host: 'WIN-4FMBHHT0AJI', ip: '10.12.45.232', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:12109/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: 0e5e5208-2639-46c1-ac83-0ff61e4cb051
-*** Element info: {Using=xpath, value=//div[@id='_title']/h1}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:490)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:345)
-	at example.TC01_indoor_map.tc001(TC01_indoor_map.java:140)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:177)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:105)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method status="PASS" signature="tc001()[pri:0, instance:example.TC01_indoor_map@2d554825]" name="tc001" duration-ms="68885" started-at="2016-04-05T18:02:54Z" finished-at="2016-04-05T18:04:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc001 -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:example.TC01_indoor_map@2d554825]" name="afterTest" is-config="true" duration-ms="0" started-at="2016-04-05T16:59:59Z" finished-at="2016-04-05T16:59:59Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:example.TC01_indoor_map@2d554825]" name="afterTest" is-config="true" duration-ms="0" started-at="2016-04-05T18:07:05Z" finished-at="2016-04-05T18:07:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="FAIL" signature="afterTest()[pri:0, instance:example.TC02_search_menu@54a097cc]" name="afterTest" is-config="true" duration-ms="0" started-at="2016-04-05T16:59:59Z" finished-at="2016-04-05T16:59:59Z">
+        <test-method status="FAIL" signature="afterTest()[pri:0, instance:example.TC02_search_menu@54a097cc]" name="afterTest" is-config="true" duration-ms="0" started-at="2016-04-05T18:07:05Z" finished-at="2016-04-05T18:07:05Z">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[Unable to get browser (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 29 milliseconds
+Command duration or timeout: 4 milliseconds
 Build info: version: '2.48.0', revision: 'b7b081a4f1289f17e8ecd38bc67e137c2a12e34a', time: '2015-10-07 09:50:14'
 System info: host: 'WIN-4FMBHHT0AJI', ip: '10.12.45.232', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:34274/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: 090d887d-c87b-4679-8391-7f5d11459b53]]>
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:34504/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: de008b77-dfe0-4d61-a09f-7fb53d8b7d12]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to get browser (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 29 milliseconds
+Command duration or timeout: 4 milliseconds
 Build info: version: '2.48.0', revision: 'b7b081a4f1289f17e8ecd38bc67e137c2a12e34a', time: '2015-10-07 09:50:14'
 System info: host: 'WIN-4FMBHHT0AJI', ip: '10.12.45.232', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:34274/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: 090d887d-c87b-4679-8391-7f5d11459b53
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:34504/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: de008b77-dfe0-4d61-a09f-7fb53d8b7d12
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -654,50 +588,50 @@ Session ID: 090d887d-c87b-4679-8391-7f5d11459b53
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="SKIP" signature="afterTest()[pri:0, instance:example.TC05_subway_menu@5a61f5df]" name="afterTest" is-config="true" duration-ms="0" started-at="2016-04-05T16:59:59Z" finished-at="2016-04-05T16:59:59Z">
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:example.TC05_subway_menu@5a61f5df]" name="afterTest" is-config="true" duration-ms="0" started-at="2016-04-05T18:07:05Z" finished-at="2016-04-05T18:07:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="SKIP" signature="afterTest()[pri:0, instance:example.TC06_endPage_detail@7225790e]" name="afterTest" is-config="true" duration-ms="0" started-at="2016-04-05T16:59:59Z" finished-at="2016-04-05T16:59:59Z">
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:example.TC07_endPage_CP_Link@531be3c5]" name="afterTest" is-config="true" duration-ms="0" started-at="2016-04-05T18:07:05Z" finished-at="2016-04-05T18:07:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="SKIP" signature="afterTest()[pri:0, instance:example.TC04_bus_menu@36f6e879]" name="afterTest" is-config="true" duration-ms="0" started-at="2016-04-05T16:59:59Z" finished-at="2016-04-05T16:59:59Z">
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:example.TC06_endPage_detail@7225790e]" name="afterTest" is-config="true" duration-ms="0" started-at="2016-04-05T18:07:05Z" finished-at="2016-04-05T18:07:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="SKIP" signature="afterTest()[pri:0, instance:example.TC03_route_menu@3551a94]" name="afterTest" is-config="true" duration-ms="0" started-at="2016-04-05T16:59:59Z" finished-at="2016-04-05T16:59:59Z">
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:example.TC04_bus_menu@36f6e879]" name="afterTest" is-config="true" duration-ms="0" started-at="2016-04-05T18:07:05Z" finished-at="2016-04-05T18:07:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="SKIP" signature="afterTest()[pri:0, instance:example.TC07_endPage_CP_Link@531be3c5]" name="afterTest" is-config="true" duration-ms="0" started-at="2016-04-05T16:59:59Z" finished-at="2016-04-05T16:59:59Z">
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:example.TC03_route_menu@3551a94]" name="afterTest" is-config="true" duration-ms="0" started-at="2016-04-05T18:07:05Z" finished-at="2016-04-05T18:07:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- example.TC01_indoor_map -->
       <class name="example.TC03_route_menu">
-        <test-method status="FAIL" signature="tc002()[pri:0, instance:example.TC03_route_menu@3551a94]" name="tc002" duration-ms="10655" started-at="2016-04-05T16:59:12Z" finished-at="2016-04-05T16:59:23Z">
+        <test-method status="FAIL" signature="tc002()[pri:0, instance:example.TC03_route_menu@3551a94]" name="tc002" duration-ms="10555" started-at="2016-04-05T18:05:23Z" finished-at="2016-04-05T18:05:34Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Unable to find element with xpath == //div[@id='panel']/div[2]/div[1]/div[1]/div[1]/div[1]/div[1] (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.20 seconds
+Command duration or timeout: 10.11 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.48.0', revision: 'b7b081a4f1289f17e8ecd38bc67e137c2a12e34a', time: '2015-10-07 09:50:14'
 System info: host: 'WIN-4FMBHHT0AJI', ip: '10.12.45.232', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:46678/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: cd5e65ba-406b-4cf3-acbe-6fbffa1a7121
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:15277/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 55e84769-4a96-4e69-983a-fe9a4377c75b
 *** Element info: {Using=xpath, value=//div[@id='panel']/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with xpath == //div[@id='panel']/div[2]/div[1]/div[1]/div[1]/div[1]/div[1] (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.20 seconds
+Command duration or timeout: 10.11 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.48.0', revision: 'b7b081a4f1289f17e8ecd38bc67e137c2a12e34a', time: '2015-10-07 09:50:14'
 System info: host: 'WIN-4FMBHHT0AJI', ip: '10.12.45.232', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:46678/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: cd5e65ba-406b-4cf3-acbe-6fbffa1a7121
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:15277/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 55e84769-4a96-4e69-983a-fe9a4377c75b
 *** Element info: {Using=xpath, value=//div[@id='panel']/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -750,29 +684,27 @@ Session ID: cd5e65ba-406b-4cf3-acbe-6fbffa1a7121
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc002 -->
-        <test-method status="FAIL" signature="tc003()[pri:0, instance:example.TC03_route_menu@3551a94]" name="tc003" duration-ms="30752" started-at="2016-04-05T16:59:23Z" finished-at="2016-04-05T16:59:53Z">
-          <exception class="org.openqa.selenium.InvalidSelectorException">
+        <test-method status="FAIL" signature="tc003()[pri:0, instance:example.TC03_route_menu@3551a94]" name="tc003" duration-ms="90938" started-at="2016-04-05T18:05:34Z" finished-at="2016-04-05T18:07:05Z">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[The xpath expression '//div[@id='panel']/div[2]/div[1]/div[1]/div[2]/ul[1]/li[1]/a' cannot be evaluated or does notresult in a WebElement (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 5.99 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+              <![CDATA[Unable to find element on closed window (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 3 milliseconds
 Build info: version: '2.48.0', revision: 'b7b081a4f1289f17e8ecd38bc67e137c2a12e34a', time: '2015-10-07 09:50:14'
 System info: host: 'WIN-4FMBHHT0AJI', ip: '10.12.45.232', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:46678/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: cd5e65ba-406b-4cf3-acbe-6fbffa1a7121
-*** Element info: {Using=xpath, value=//div[@id='panel']/div[2]/div[1]/div[1]/div[2]/ul[1]/li[1]/a}]]>
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:15277/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 55e84769-4a96-4e69-983a-fe9a4377c75b
+*** Element info: {Using=id, value=pw}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidSelectorException: The xpath expression '//div[@id='panel']/div[2]/div[1]/div[1]/div[2]/ul[1]/li[1]/a' cannot be evaluated or does notresult in a WebElement (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 5.99 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to find element on closed window (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 3 milliseconds
 Build info: version: '2.48.0', revision: 'b7b081a4f1289f17e8ecd38bc67e137c2a12e34a', time: '2015-10-07 09:50:14'
 System info: host: 'WIN-4FMBHHT0AJI', ip: '10.12.45.232', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:46678/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: cd5e65ba-406b-4cf3-acbe-6fbffa1a7121
-*** Element info: {Using=xpath, value=//div[@id='panel']/div[2]/div[1]/div[1]/div[2]/ul[1]/li[1]/a}
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:15277/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 55e84769-4a96-4e69-983a-fe9a4377c75b
+*** Element info: {Using=id, value=pw}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -781,10 +713,10 @@ Session ID: cd5e65ba-406b-4cf3-acbe-6fbffa1a7121
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:490)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:403)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:345)
-	at example.TC03_route_menu.tc003(TC03_route_menu.java:165)
+	at example.TC03_route_menu.tc003(TC03_route_menu.java:183)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -820,30 +752,30 @@ Session ID: cd5e65ba-406b-4cf3-acbe-6fbffa1a7121
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc003 -->
-        <test-method status="FAIL" signature="tc004()[pri:0, instance:example.TC03_route_menu@3551a94]" name="tc004" duration-ms="127" started-at="2016-04-05T16:59:53Z" finished-at="2016-04-05T16:59:53Z">
+        <test-method status="FAIL" signature="tc004()[pri:0, instance:example.TC03_route_menu@3551a94]" name="tc004" duration-ms="12" started-at="2016-04-05T18:07:05Z" finished-at="2016-04-05T18:07:05Z">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[Unable to find element on closed window (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 127 milliseconds
+Command duration or timeout: 11 milliseconds
 Build info: version: '2.48.0', revision: 'b7b081a4f1289f17e8ecd38bc67e137c2a12e34a', time: '2015-10-07 09:50:14'
 System info: host: 'WIN-4FMBHHT0AJI', ip: '10.12.45.232', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:46678/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: cd5e65ba-406b-4cf3-acbe-6fbffa1a7121
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:15277/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 55e84769-4a96-4e69-983a-fe9a4377c75b
 *** Element info: {Using=xpath, value=//div[@id='nav']/ul/li[2]/a}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to find element on closed window (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 127 milliseconds
+Command duration or timeout: 11 milliseconds
 Build info: version: '2.48.0', revision: 'b7b081a4f1289f17e8ecd38bc67e137c2a12e34a', time: '2015-10-07 09:50:14'
 System info: host: 'WIN-4FMBHHT0AJI', ip: '10.12.45.232', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:46678/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: cd5e65ba-406b-4cf3-acbe-6fbffa1a7121
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:15277/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 55e84769-4a96-4e69-983a-fe9a4377c75b
 *** Element info: {Using=xpath, value=//div[@id='nav']/ul/li[2]/a}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -896,26 +828,26 @@ Session ID: cd5e65ba-406b-4cf3-acbe-6fbffa1a7121
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc004 -->
-        <test-method status="FAIL" signature="tc005()[pri:0, instance:example.TC03_route_menu@3551a94]" name="tc005" duration-ms="15" started-at="2016-04-05T16:59:53Z" finished-at="2016-04-05T16:59:54Z">
+        <test-method status="FAIL" signature="tc005()[pri:0, instance:example.TC03_route_menu@3551a94]" name="tc005" duration-ms="13" started-at="2016-04-05T18:07:05Z" finished-at="2016-04-05T18:07:05Z">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[Unable to find element on closed window (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 15 milliseconds
+Command duration or timeout: 13 milliseconds
 Build info: version: '2.48.0', revision: 'b7b081a4f1289f17e8ecd38bc67e137c2a12e34a', time: '2015-10-07 09:50:14'
 System info: host: 'WIN-4FMBHHT0AJI', ip: '10.12.45.232', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:46678/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: cd5e65ba-406b-4cf3-acbe-6fbffa1a7121
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:15277/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 55e84769-4a96-4e69-983a-fe9a4377c75b
 *** Element info: {Using=xpath, value=//div[@id='nav']/ul/li[2]/a}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to find element on closed window (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 15 milliseconds
+Command duration or timeout: 13 milliseconds
 Build info: version: '2.48.0', revision: 'b7b081a4f1289f17e8ecd38bc67e137c2a12e34a', time: '2015-10-07 09:50:14'
 System info: host: 'WIN-4FMBHHT0AJI', ip: '10.12.45.232', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:46678/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: cd5e65ba-406b-4cf3-acbe-6fbffa1a7121
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:15277/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 55e84769-4a96-4e69-983a-fe9a4377c75b
 *** Element info: {Using=xpath, value=//div[@id='nav']/ul/li[2]/a}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -968,26 +900,26 @@ Session ID: cd5e65ba-406b-4cf3-acbe-6fbffa1a7121
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc005 -->
-        <test-method status="FAIL" signature="tc006()[pri:0, instance:example.TC03_route_menu@3551a94]" name="tc006" duration-ms="18" started-at="2016-04-05T16:59:54Z" finished-at="2016-04-05T16:59:54Z">
+        <test-method status="FAIL" signature="tc006()[pri:0, instance:example.TC03_route_menu@3551a94]" name="tc006" duration-ms="13" started-at="2016-04-05T18:07:05Z" finished-at="2016-04-05T18:07:05Z">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[Unable to find element on closed window (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 18 milliseconds
+Command duration or timeout: 13 milliseconds
 Build info: version: '2.48.0', revision: 'b7b081a4f1289f17e8ecd38bc67e137c2a12e34a', time: '2015-10-07 09:50:14'
 System info: host: 'WIN-4FMBHHT0AJI', ip: '10.12.45.232', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:46678/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: cd5e65ba-406b-4cf3-acbe-6fbffa1a7121
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:15277/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 55e84769-4a96-4e69-983a-fe9a4377c75b
 *** Element info: {Using=xpath, value=//div[@id='nav']/ul/li[2]/a}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to find element on closed window (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 18 milliseconds
+Command duration or timeout: 13 milliseconds
 Build info: version: '2.48.0', revision: 'b7b081a4f1289f17e8ecd38bc67e137c2a12e34a', time: '2015-10-07 09:50:14'
 System info: host: 'WIN-4FMBHHT0AJI', ip: '10.12.45.232', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:46678/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: cd5e65ba-406b-4cf3-acbe-6fbffa1a7121
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:15277/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 55e84769-4a96-4e69-983a-fe9a4377c75b
 *** Element info: {Using=xpath, value=//div[@id='nav']/ul/li[2]/a}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)

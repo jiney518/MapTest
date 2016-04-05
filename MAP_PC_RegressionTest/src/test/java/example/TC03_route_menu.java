@@ -141,6 +141,7 @@ public class TC03_route_menu {
 		String winHandlemain = driver.getWindowHandle();
 		
 		//대중교통탭으로 이동
+		System.out.println("대중교통탭으로 이동");
 		driver.findElement(By.xpath("//div[@id='nav']/ul/li[2]/a")).click();
 				
 		driver.findElement(By.xpath("//div[@id='panel']/div[2]/div[1]/div[1]/div[1]/ul/li[2]/a")).click();
@@ -170,6 +171,7 @@ public class TC03_route_menu {
 		
 		//즐겨찾기 클릭
 		driver.findElement(By.xpath("//div[@id='panel']/div[2]/div[1]/div[2]/div[1]/a")).click();
+		System.out.println("즐겨찾기 클릭");
 
 		Thread.sleep(2000);	
 		

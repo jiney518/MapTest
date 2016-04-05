@@ -7,7 +7,6 @@
         <methods>
           <include name="afterTest"/>
           <include name="beforeTest"/>
-          <include name="tc001"/>
         </methods>
       </class> <!-- example.TC01_indoor_map -->
       <class name="example.TC06_endPage_detail">

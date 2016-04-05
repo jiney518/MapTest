@@ -50,6 +50,7 @@ public class TC04_bus_menu {
 
 		//페이지 네비게이션
 		driver.findElement(By.xpath("//div[@id='panel']/div[2]/div[1]/div[2]/div[2]/div/div/a[5]")).click();
+		System.out.println("버스 검색결과 페이지 이동");
 		//농어촌 선택
 		driver.findElement(By.xpath("//div[@id='panel']/div[2]/div[1]/div[2]/div[1]/div/div/div[2]/a/span[2]")).click();
 		driver.findElement(By.xpath("//div[@id='panel']/div[2]/div[1]/div[2]/div[1]/div/div/div[2]/div/ul/li[7]/a")).click();	
@@ -119,7 +120,7 @@ public class TC04_bus_menu {
 		driver.findElement(By.xpath("//div[@id='nav']/ul/li[1]/a")).click();
 		driver.findElement(By.xpath("//div[@id='nav']/ul/li[3]/a")).click();
 		Assert.assertEquals("'경기도 성남시 중원구 중앙동'", driver.findElement(By.xpath("//div[@id='panel']/div[2]/div[1]/div[2]/div[1]/div/h4/strong")).getText());
-		
+		System.out.println("버스 정류장 중복지역명 이동");
 		
 	}
 	

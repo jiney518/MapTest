@@ -34,6 +34,7 @@ public class TC05_subway_menu {
 		
 		//지하철 길찾기
 		driver.findElement(By.xpath("//div[@id='panel']/div[2]/div[1]/div[1]/div/fieldset/div[2]/a[2]")).click();
+		System.out.println("지하철 길찾기 확인");
 		
 		driver.findElement(By.xpath("//div[@id='nav']/ul/li[4]/a")).click();
 		//최근검색
