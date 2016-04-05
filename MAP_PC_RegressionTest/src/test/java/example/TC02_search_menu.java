@@ -188,8 +188,8 @@ public class TC02_search_menu {
 	  
 
 	    System.out.println("tearDown");
-	    driver.close();
-	    driver.quit();
+	    //driver.close();
+	    //driver.quit();
 	    
   }
 

@@ -39,10 +39,10 @@ public class TC01_indoor_map {
 		  
 	  }
 
-
 	
   @Test
   public void tc001() throws Exception  {
+	  
 		
 		String winHandlemain = driver.getWindowHandle();
 		
@@ -178,8 +178,8 @@ public class TC01_indoor_map {
   public void afterTest() {
 	  
 	   System.out.println("tearDown");
-	   // driver.close();
-	    //driver.quit();
+	    driver.close();
+	    driver.quit();
   }
 
 }

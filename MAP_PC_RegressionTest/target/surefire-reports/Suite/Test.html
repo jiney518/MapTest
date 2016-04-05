@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/14</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Apr 05 20:48:02 KST 2016</td>
+<td>Started on:</td><td>Tue Apr 05 18:36:09 KST 2016</td>
 </tr>
-<tr><td>Total time:</td><td>3 seconds (3528 ms)</td>
+<tr><td>Total time:</td><td>10800 seconds (10800891 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,41 +76,71 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='example.TC01_indoor_map.beforeTest()'><b>beforeTest</b><br>Test class: example.TC01_indoor_map</td>
-<td><div><pre>org.openqa.selenium.NoSuchWindowException: Error retrieving window with handle current (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 13 milliseconds
+<td><div><pre>org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
 Build info: version: &apos;2.48.0&apos;, revision: &apos;b7b081a4f1289f17e8ecd38bc67e137c2a12e34a&apos;, time: &apos;2015-10-07 09:50:14&apos;
 System info: host: &apos;WIN-4FMBHHT0AJI&apos;, ip: &apos;10.12.45.232&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_73&apos;
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:6747/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: 4a4be513-ec63-4e9a-8dbf-22558e5e3431
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:907)
-	at example.TC01_indoor_map.beforeTest(TC01_indoor_map.java:36)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace961409111", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace961409111'><pre>org.openqa.selenium.NoSuchWindowException: Error retrieving window with handle current (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 13 milliseconds
+Driver info: driver.version: InternetExplorerDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:247)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+	at org.openqa.selenium.ie.InternetExplorerDriver.run(InternetExplorerDriver.java:182)
+	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:174)
+	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:150)
+	at example.TC01_indoor_map.beforeTest(TC01_indoor_map.java:34)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:177)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:105)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
+Caused by: org.openqa.selenium.WebDriverException: java.net.SocketTimeoutException: Read timed out
 Build info: version: &apos;2.48.0&apos;, revision: &apos;b7b081a4f1289f17e8ecd38bc67e137c2a12e34a&apos;, time: &apos;2015-10-07 09:50:14&apos;
 System info: host: &apos;WIN-4FMBHHT0AJI&apos;, ip: &apos;10.12.45.232&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_73&apos;
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:6747/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: 4a4be513-ec63-4e9a-8dbf-22558e5e3431
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:907)
-	at example.TC01_indoor_map.beforeTest(TC01_indoor_map.java:36)
+Driver info: driver.version: InternetExplorerDriver
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:91)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
+	... 37 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:139)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:155)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:284)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:261)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:165)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:272)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:124)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:143)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:89)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	... 38 more
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace361398902", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace361398902'><pre>org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: &apos;2.48.0&apos;, revision: &apos;b7b081a4f1289f17e8ecd38bc67e137c2a12e34a&apos;, time: &apos;2015-10-07 09:50:14&apos;
+System info: host: &apos;WIN-4FMBHHT0AJI&apos;, ip: &apos;10.12.45.232&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_73&apos;
+Driver info: driver.version: InternetExplorerDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:247)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+	at org.openqa.selenium.ie.InternetExplorerDriver.run(InternetExplorerDriver.java:182)
+	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:174)
+	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:150)
+	at example.TC01_indoor_map.beforeTest(TC01_indoor_map.java:34)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -130,12 +160,52 @@ Session ID: 4a4be513-ec63-4e9a-8dbf-22558e5e3431
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
 	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:177)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:105)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
+Caused by: org.openqa.selenium.WebDriverException: java.net.SocketTimeoutException: Read timed out
+Build info: version: &apos;2.48.0&apos;, revision: &apos;b7b081a4f1289f17e8ecd38bc67e137c2a12e34a&apos;, time: &apos;2015-10-07 09:50:14&apos;
+System info: host: &apos;WIN-4FMBHHT0AJI&apos;, ip: &apos;10.12.45.232&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_73&apos;
+Driver info: driver.version: InternetExplorerDriver
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:91)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
+	... 37 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:139)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:155)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:284)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:261)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:165)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:272)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:124)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:143)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:89)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	... 38 more
 </pre></div></td>
 <td>0</td>
 <td>null</td></tr>
@@ -224,72 +294,72 @@ Session ID: 4a4be513-ec63-4e9a-8dbf-22558e5e3431
 <td title='example.TC01_indoor_map.tc001()'><b>tc001</b><br>Test class: example.TC01_indoor_map</td>
 <td></td>
 <td>0</td>
-<td>example.TC01_indoor_map@880ec60</td></tr>
+<td>example.TC01_indoor_map@2d554825</td></tr>
 <tr>
 <td title='example.TC03_route_menu.tc002()'><b>tc002</b><br>Test class: example.TC03_route_menu</td>
 <td></td>
 <td>0</td>
-<td>example.TC03_route_menu@6442b0a6</td></tr>
+<td>example.TC03_route_menu@3551a94</td></tr>
 <tr>
 <td title='example.TC03_route_menu.tc003()'><b>tc003</b><br>Test class: example.TC03_route_menu</td>
 <td></td>
 <td>0</td>
-<td>example.TC03_route_menu@6442b0a6</td></tr>
+<td>example.TC03_route_menu@3551a94</td></tr>
 <tr>
 <td title='example.TC03_route_menu.tc004()'><b>tc004</b><br>Test class: example.TC03_route_menu</td>
 <td></td>
 <td>0</td>
-<td>example.TC03_route_menu@6442b0a6</td></tr>
+<td>example.TC03_route_menu@3551a94</td></tr>
 <tr>
 <td title='example.TC03_route_menu.tc005()'><b>tc005</b><br>Test class: example.TC03_route_menu</td>
 <td></td>
 <td>0</td>
-<td>example.TC03_route_menu@6442b0a6</td></tr>
+<td>example.TC03_route_menu@3551a94</td></tr>
 <tr>
 <td title='example.TC03_route_menu.tc006()'><b>tc006</b><br>Test class: example.TC03_route_menu</td>
 <td></td>
 <td>0</td>
-<td>example.TC03_route_menu@6442b0a6</td></tr>
+<td>example.TC03_route_menu@3551a94</td></tr>
 <tr>
 <td title='example.TC02_search_menu.tc007()'><b>tc007</b><br>Test class: example.TC02_search_menu</td>
 <td></td>
 <td>0</td>
-<td>example.TC02_search_menu@60f82f98</td></tr>
+<td>example.TC02_search_menu@54a097cc</td></tr>
 <tr>
 <td title='example.TC02_search_menu.tc008()'><b>tc008</b><br>Test class: example.TC02_search_menu</td>
 <td></td>
 <td>0</td>
-<td>example.TC02_search_menu@60f82f98</td></tr>
+<td>example.TC02_search_menu@54a097cc</td></tr>
 <tr>
 <td title='example.TC04_bus_menu.tc009()'><b>tc009</b><br>Test class: example.TC04_bus_menu</td>
 <td></td>
 <td>0</td>
-<td>example.TC04_bus_menu@67b64c45</td></tr>
+<td>example.TC04_bus_menu@36f6e879</td></tr>
 <tr>
 <td title='example.TC05_subway_menu.tc010()'><b>tc010</b><br>Test class: example.TC05_subway_menu</td>
 <td></td>
 <td>0</td>
-<td>example.TC05_subway_menu@4411d970</td></tr>
+<td>example.TC05_subway_menu@5a61f5df</td></tr>
 <tr>
 <td title='example.TC06_endPage_detail.tc011()'><b>tc011</b><br>Test class: example.TC06_endPage_detail</td>
 <td></td>
 <td>0</td>
-<td>example.TC06_endPage_detail@96532d6</td></tr>
+<td>example.TC06_endPage_detail@7225790e</td></tr>
 <tr>
 <td title='example.TC07_endPage_CP_Link.tc012()'><b>tc012</b><br>Test class: example.TC07_endPage_CP_Link</td>
 <td></td>
 <td>0</td>
-<td>example.TC07_endPage_CP_Link@3796751b</td></tr>
+<td>example.TC07_endPage_CP_Link@531be3c5</td></tr>
 <tr>
 <td title='example.TC07_endPage_CP_Link.tc013()'><b>tc013</b><br>Test class: example.TC07_endPage_CP_Link</td>
 <td></td>
 <td>0</td>
-<td>example.TC07_endPage_CP_Link@3796751b</td></tr>
+<td>example.TC07_endPage_CP_Link@531be3c5</td></tr>
 <tr>
 <td title='example.TC07_endPage_CP_Link.tc014()'><b>tc014</b><br>Test class: example.TC07_endPage_CP_Link</td>
 <td></td>
 <td>0</td>
-<td>example.TC07_endPage_CP_Link@3796751b</td></tr>
+<td>example.TC07_endPage_CP_Link@531be3c5</td></tr>
 </table><p>
 </body>
 </html>

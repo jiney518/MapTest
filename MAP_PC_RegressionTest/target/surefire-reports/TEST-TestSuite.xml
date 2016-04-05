@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="3.792" tests="28" errors="0" skipped="27" failures="1">
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="3" failures="3" name="TestSuite" time="150.596" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="D:\java\jre1.8.0_73\bin"/>
@@ -22,11 +22,12 @@
     <property name="java.endorsed.dirs" value="D:\java\jre1.8.0_73\lib\endorsed"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.io.tmpdir" value="C:\Users\ADMINI~1\AppData\Local\Temp\"/>
-    <property name="line.separator" value="&#10;"/>
+    <property name="line.separator" value="
+"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 7"/>
-    <property name="classworlds.conf" value="C:\Users\Administrator\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf8462964794864088822.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\Administrator\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf1238129758060588980.tmp"/>
     <property name="sun.jnu.encoding" value="MS949"/>
     <property name="java.library.path" value="D:\java\jre1.8.0_73\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_77/bin/server;C:/Program Files/Java/jre1.8.0_77/bin;C:/Program Files/Java/jre1.8.0_77/lib/amd64;C:\ProgramData\Oracle\Java\javapath;D:\java\jdk1.8.0_73\bin;C:\Windows\System32;C:\Program Files (x86)\AMD\ATI.ACE\CoreStatic;D:\jiney\;D:\android\platform-tools;D:\java\apache-maven-3.3.9\bin;C:\Program Files\Bandizip\7z;C:\Users\Administrator\AppData\Roaming\npm;D:\eclipse;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -60,108 +61,91 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="beforeTest" classname="example.TC01_indoor_map" time="3.792">
-    <failure message="Error retrieving window with handle current (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 13 milliseconds&#10;Build info: version: &apos;2.48.0&apos;, revision: &apos;b7b081a4f1289f17e8ecd38bc67e137c2a12e34a&apos;, time: &apos;2015-10-07 09:50:14&apos;&#10;System info: host: &apos;WIN-4FMBHHT0AJI&apos;, ip: &apos;10.12.45.232&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_73&apos;&#10;Driver info: org.openqa.selenium.ie.InternetExplorerDriver&#10;Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:6747/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]&#10;Session ID: 4a4be513-ec63-4e9a-8dbf-22558e5e3431" type="org.openqa.selenium.NoSuchWindowException">org.openqa.selenium.NoSuchWindowException: Error retrieving window with handle current (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 13 milliseconds
-Build info: version: '2.48.0', revision: 'b7b081a4f1289f17e8ecd38bc67e137c2a12e34a', time: '2015-10-07 09:50:14'
-System info: host: 'WIN-4FMBHHT0AJI', ip: '10.12.45.232', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_73'
+  <testcase classname="example.TC01_indoor_map" name="tc001" time="59.27">
+    <failure message="Unable to find element with xpath == //div[@id=&apos;_title&apos;]/h1 (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.25 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;WIN-4FMBHHT0AJI&apos;, ip: &apos;10.12.45.232&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_73&apos;
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:6747/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
-Session ID: 4a4be513-ec63-4e9a-8dbf-22558e5e3431
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:24845/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: a28d077f-45da-4836-a498-9c48241ae67d
+*** Element info: {Using=xpath, value=//div[@id=&apos;_title&apos;]/h1}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to find element with xpath == //div[@id=&apos;_title&apos;]/h1 (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.25 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;WIN-4FMBHHT0AJI&apos;, ip: &apos;10.12.45.232&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_73&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:24845/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: a28d077f-45da-4836-a498-9c48241ae67d
+*** Element info: {Using=xpath, value=//div[@id=&apos;_title&apos;]/h1}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:907)
-	at example.TC01_indoor_map.beforeTest(TC01_indoor_map.java:36)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at example.TC01_indoor_map.tc001(TC01_indoor_map.java:140)
 </failure>
-    <system-err><![CDATA[Started InternetExplorerDriver server (64-bit)
+    <system-out>IE 오픈 성공
+주안역지하상가- 층별안내 클릭
+Sucessfully Right clicked on the element
+코엑스 아쿠아리움 실내지도 활성화 OK
+</system-out>
+    <system-err>Started InternetExplorerDriver server (64-bit)
 2.48.0.0
-Listening on port 6747
-]]></system-err>
+Listening on port 24845
+</system-err>
   </testcase>
-  <testcase name="beforeTest" classname="example.TC01_indoor_map" time="0">
-    <skipped/>
+  <testcase classname="example.TC02_search_menu" name="tc007" time="14.535">
+    <failure message="expected:&lt;용인대학교 박물관&gt; but was:&lt;길토래비자연학교&gt;" type="junit.framework.ComparisonFailure">junit.framework.ComparisonFailure: expected:&lt;용인대학교 박물관&gt; but was:&lt;길토래비자연학교&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at example.TC02_search_menu.tc007(TC02_search_menu.java:61)
+</failure>
+    <system-out>tearDown
+IE 오픈 성공
+</system-out>
+    <system-err>Started InternetExplorerDriver server (64-bit)
+2.48.0.0
+Listening on port 21866
+</system-err>
   </testcase>
-  <testcase name="openBrower" classname="example.TC01_indoor_map" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="openBrower" classname="example.TC01_indoor_map" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="openBrower" classname="example.TC01_indoor_map" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="openBrower" classname="example.TC01_indoor_map" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="openBrower" classname="example.TC01_indoor_map" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="tc001" classname="example.TC01_indoor_map" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="tc007" classname="example.TC02_search_menu" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="tc008" classname="example.TC02_search_menu" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="tc002" classname="example.TC03_route_menu" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="tc003" classname="example.TC03_route_menu" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="tc004" classname="example.TC03_route_menu" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="tc005" classname="example.TC03_route_menu" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="tc006" classname="example.TC03_route_menu" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="tc009" classname="example.TC04_bus_menu" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="tc010" classname="example.TC05_subway_menu" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="tc011" classname="example.TC06_endPage_detail" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="tc012" classname="example.TC07_endPage_CP_Link" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="tc013" classname="example.TC07_endPage_CP_Link" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="tc014" classname="example.TC07_endPage_CP_Link" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="afterTest" classname="example.TC01_indoor_map" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="afterTest" classname="example.TC01_indoor_map" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="afterTest" classname="example.TC01_indoor_map" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="afterTest" classname="example.TC01_indoor_map" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="afterTest" classname="example.TC01_indoor_map" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="afterTest" classname="example.TC01_indoor_map" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="afterTest" classname="example.TC01_indoor_map" time="0">
-    <skipped/>
+  <testcase classname="example.TC02_search_menu" name="tc008" time="76.791">
+    <failure message="Unable to find element with xpath == //div[@id=&apos;panel&apos;]/div[2]/div[1]/div[2]/div[2]/div/p (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.25 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;WIN-4FMBHHT0AJI&apos;, ip: &apos;10.12.45.232&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_73&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:21866/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 390acaeb-0bbf-419d-ab61-a59d6af0b912
+*** Element info: {Using=xpath, value=//div[@id=&apos;panel&apos;]/div[2]/div[1]/div[2]/div[2]/div/p}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to find element with xpath == //div[@id=&apos;panel&apos;]/div[2]/div[1]/div[2]/div[2]/div/p (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.25 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;WIN-4FMBHHT0AJI&apos;, ip: &apos;10.12.45.232&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_73&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, enablePersistentHover=true, ie.forceCreateProcessApi=false, pageLoadStrategy=normal, ie.usePerProcessProxy=false, ignoreZoomSetting=false, handlesAlerts=true, version=10, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:21866/, takesScreenshot=true, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 390acaeb-0bbf-419d-ab61-a59d6af0b912
+*** Element info: {Using=xpath, value=//div[@id=&apos;panel&apos;]/div[2]/div[1]/div[2]/div[2]/div/p}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at example.TC02_search_menu.tc008(TC02_search_menu.java:151)
+</failure>
   </testcase>
 </testsuite>
