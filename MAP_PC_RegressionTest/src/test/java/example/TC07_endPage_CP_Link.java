@@ -151,6 +151,7 @@ public class TC07_endPage_CP_Link {
 		driver.close(); // 업체 상세페이지 종료 
 		driver.switchTo().window(winHandlemain);
 		Thread.sleep(2000);		
+		System.out.println("요기요 확인");
 		
 		
 		/* ******* 모두의 주차장***********/
