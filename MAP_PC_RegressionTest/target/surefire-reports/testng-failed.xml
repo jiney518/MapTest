@@ -3,22 +3,16 @@
 <suite verbose="0" name="Failed suite [Suite]" parallel="none">
   <test name="Test(failed)" parallel="none">
     <classes>
-      <class name="example.TC05_subway_menu">
+      <class name="example.TC01_indoor_map">
         <methods>
-          <include name="tc010"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="tc001"/>
         </methods>
-      </class> <!-- example.TC05_subway_menu -->
-      <class name="example.TC03_route_menu">
-        <methods>
-          <include name="tc005"/>
-          <include name="tc003"/>
-          <include name="tc006"/>
-          <include name="tc004"/>
-          <include name="tc002"/>
-        </methods>
-      </class> <!-- example.TC03_route_menu -->
+      </class> <!-- example.TC01_indoor_map -->
       <class name="example.TC06_endPage_detail">
         <methods>
+          <include name="openBrower"/>
           <include name="tc011"/>
         </methods>
       </class> <!-- example.TC06_endPage_detail -->
@@ -26,9 +20,31 @@
         <methods>
           <include name="afterTest"/>
           <include name="tc007"/>
-          <include name="tc008"/>
+          <include name="beforeTest"/>
         </methods>
       </class> <!-- example.TC02_search_menu -->
+      <class name="example.TC04_bus_menu">
+        <methods>
+          <include name="tc009"/>
+          <include name="openBrower"/>
+        </methods>
+      </class> <!-- example.TC04_bus_menu -->
+      <class name="example.TC05_subway_menu">
+        <methods>
+          <include name="tc010"/>
+          <include name="openBrower"/>
+        </methods>
+      </class> <!-- example.TC05_subway_menu -->
+      <class name="example.TC03_route_menu">
+        <methods>
+          <include name="openBrower"/>
+          <include name="tc005"/>
+          <include name="tc003"/>
+          <include name="tc006"/>
+          <include name="tc004"/>
+          <include name="tc002"/>
+        </methods>
+      </class> <!-- example.TC03_route_menu -->
       <class name="example.TC07_endPage_CP_Link">
         <methods>
           <include name="openBrower"/>
@@ -37,17 +53,6 @@
           <include name="tc012"/>
         </methods>
       </class> <!-- example.TC07_endPage_CP_Link -->
-      <class name="example.TC01_indoor_map">
-        <methods>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
-        </methods>
-      </class> <!-- example.TC01_indoor_map -->
-      <class name="example.TC04_bus_menu">
-        <methods>
-          <include name="tc009"/>
-        </methods>
-      </class> <!-- example.TC04_bus_menu -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
