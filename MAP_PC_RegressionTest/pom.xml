@@ -3,9 +3,16 @@
   <groupId>MAP_PC_RegressionTest</groupId>
   <artifactId>MAP_PC_RegressionTest</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
-  <dependencies>            
-        <dependency>              
+  <url>http://maven.apache.org</url>
+<properties>
+<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  	<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+</properties>
+
+
+
+  <dependencies>       
+          <dependency>              
              <groupId>junit</groupId>                               
              <artifactId>junit</artifactId>                             
              <version>3.8.1</version>                               
@@ -24,7 +31,21 @@
        </dependency>              
 </dependencies>
 
+
 <build>
+
+ <resources>
+    	<resource>
+    		<directory>src/resources</directory>
+    	</resource>
+    	<resource>
+    		<directory>src/java</directory>
+    		<excludes>
+    			<exclude>**/*.java</exclude>
+    		</excludes>
+    	</resource>
+    </resources>
+
 <plugins>
 <plugin>
 <groupId>org.apache.maven.plugins</groupId>
@@ -33,6 +54,7 @@
 <configuration>
 <source>1.7</source>
 <target>1.7</target>
+<encoding>utf-8</encoding>
 </configuration>
 </plugin>
 <plugin>

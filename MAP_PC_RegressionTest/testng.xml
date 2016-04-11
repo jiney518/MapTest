@@ -9,11 +9,12 @@
       
   <test name="Test2">
       <classes>
-      <class name="example.TC02_search_menu"/>
+      <class name="example.TC03_route_menu"/>
       </classes>
       </test>
 <!--       
-       <class name="example.TC03_route_menu"/>
+       
+       <class name="example.TC02_search_menu"/>
        <class name="example.TC04_bus_menu"/>
        <class name="example.TC05_subway_menu"/>
        <class name="example.TC06_endPage_detail"/>
