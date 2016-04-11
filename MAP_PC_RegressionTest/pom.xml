@@ -39,7 +39,7 @@
     		<directory>src/resources</directory>
     	</resource>
     	<resource>
-    		<directory>src/java</directory>
+    		<directory>src/test/java</directory>
     		<excludes>
     			<exclude>**/*.java</exclude>
     		</excludes>
