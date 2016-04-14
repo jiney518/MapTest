@@ -54,7 +54,7 @@ public class TC04_bus_menu {
 		//농어촌 선택
 		driver.findElement(By.xpath("//div[@id='panel']/div[2]/div[1]/div[2]/div[1]/div/div/div[2]/a/span[2]")).click();
 		driver.findElement(By.xpath("//div[@id='panel']/div[2]/div[1]/div[2]/div[1]/div/div/div[2]/div/ul/li[7]/a")).click();	
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 	
 		
 	 Assert.assertEquals("첫차 10:35, 막차 10:35, 일 1회 운행", driver.findElement
