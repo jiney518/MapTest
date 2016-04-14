@@ -57,8 +57,8 @@ public class TC04_bus_menu {
 		Thread.sleep(2000);
 	
 		
-	 //Assert.assertEquals("첫차 10:35, 막차 10:35, 일 1회 운행", driver.findElement
-				//(By.xpath("//div[@id='panel']/div[2]/div[1]/div[2]/div[2]/ul/li[1]/div/div[3]/span")).getText());
+	 /*Assert.assertEquals("첫차 10:35, 막차 10:35, 일 1회 운행", driver.findElement
+				(By.xpath("//div[@id='panel']/div[2]/div[1]/div[2]/div[2]/ul/li[1]/div/div[3]/span")).getText());*/
 		
 		//전체유형 선택
 		driver.findElement(By.xpath("//div[@id='panel']/div[2]/div[1]/div[2]/div[1]/div/div/div[2]/a/span[2]")).click();
