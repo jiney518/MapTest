@@ -25,24 +25,8 @@ public class TC01_indoor_map {
 	
 	private static WebDriver driver;	
 	
-	
-	  @BeforeTest
-	  public void beforeTest() {
-			System.setProperty("webdriver.ie.driver", "C:\\Users\\Administrator\\Desktop\\jiney\\IEDriverServer.exe");
-			DesiredCapabilities dc = DesiredCapabilities.internetExplorer();
-			dc.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
-			driver = new InternetExplorerDriver(dc);
-			driver.get("http://stg.map.naver.com");
-			driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); 		
-			System.out.println("IE ¿ÀÇÂ ¼º°ø");
-		  
-	  }
-
-	
   @Test
   public void tc001() throws Exception  {
-	  
 		
 		String winHandlemain = driver.getWindowHandle();
 		
@@ -57,17 +41,17 @@ public class TC01_indoor_map {
 	/*	mDefault.click();
 		
 		driver.findElement(By.id("search-input")).clear();
-		driver.findElement(By.id("search-input")).sendKeys("·Ôµ¥¿ùµå¸ô");
+		driver.findElement(By.id("search-input")).sendKeys("ë¡¯ë°ì›”ë“œëª°");
 		driver.findElement(By.xpath("//div[@id='header']/div[1]/fieldset/button")).click();
 		driver.findElement(By.xpath("//div[@id='panel']/div[2]/div[1]/div[2]/div[2]/ul/li[1]/div[1]/dl/dt/a/b")).click();
 		WebElement zoominBtn = driver.findElement(By.xpath("//div[@id='naver_map']/div[2]/div[2]/div[3]/a[1]"));
 		for (int i=0; i<4 ; i++){
 			zoominBtn.click();
 		}
-		System.out.println("½Ç³»Áöµµ only mode ÁøÀÔ");	
+		System.out.println("ì‹¤ë‚´ì§€ë„ only mode ì§„ì…");	
 		
 		driver.findElement(By.xpath("//div[@id='panel']/div[2]/div[1]/div[2]/div[2]/ul/li[3]/div[1]/dl/dt/a")).click();
-		System.out.println("½Ç³»Áöµµ Á¾·á ¾È³» ¸Ş½ÃÁö ³ëÃâ");
+		System.out.println("ì‹¤ë‚´ì§€ë„ ì¢…ë£Œ ì•ˆë‚´ ë©”ì‹œì§€ ë…¸ì¶œ");
 		driver.findElement(By.xpath("//div[@id='simplemodal-data']/a")).click();
 		
 		bicycle.click();
@@ -76,7 +60,7 @@ public class TC01_indoor_map {
 			zoominBtn.click();
 		}
 		
-		System.out.println("½Ç³»Áöµµ only mode: ÀÚÀü°Å ¿É¼Ç ÇØÁ¦");
+		System.out.println("ì‹¤ë‚´ì§€ë„ only mode: ìì „ê±° ì˜µì…˜ í•´ì œ");
 			
 		traffic.click();
 		cadastral.click();
@@ -91,14 +75,14 @@ public class TC01_indoor_map {
 		mDefault.click();*/
 		
 		driver.findElement(By.id("search-input")).clear();
-		driver.findElement(By.id("search-input")).sendKeys("ÁÖ¾È¿ªÁöÇÏ»ó°¡");
+		driver.findElement(By.id("search-input")).sendKeys("ì£¼ì•ˆì—­ì§€í•˜ìƒê°€");
 		driver.findElement(By.xpath("//div[@id='header']/div[1]/fieldset/button")).click();
 		driver.findElement(By.xpath("//div[@id='panel']/div[2]/div[1]/div[2]/div[2]/ul/li[1]/div[1]/dl/dt/a")).click();
 		driver.findElement(By.xpath("//div[@id='naver_map']/div[2]/div[7]/a")).click();
-		System.out.println("ÁÖ¾È¿ªÁöÇÏ»ó°¡- Ãşº°¾È³» Å¬¸¯");
+		System.out.println("ì£¼ì•ˆì—­ì§€í•˜ìƒê°€- ì¸µë³„ì•ˆë‚´ í´ë¦­");
 		
 		Thread.sleep(2000);
-		//½Ç³»ºä ¹öÆ° Å¬¸¯ 
+		//ì‹¤ë‚´ë·° ë²„íŠ¼ í´ë¦­ 
 		driver.findElement(By.xpath("//div[@id='aside']/div[5]/div/div[1]/div[3]/div[1]/ul[1]/li[5]/div[1]/div[2]/a")).click();
 		driver.findElement(By.xpath("//div[@id='snb_view']/a")).click();
 		driver.findElement(By.xpath("//div[@id='naver_map']/div[2]/div[5]/div[1]/a[1]")).click();
@@ -112,24 +96,24 @@ public class TC01_indoor_map {
 		
 		
 		driver.findElement(By.id("search-input")).clear();
-		driver.findElement(By.id("search-input")).sendKeys("¾ÆÄí¾Æ¸®¿ò ÄÚ¿¢½º");
+		driver.findElement(By.id("search-input")).sendKeys("ì•„ì¿ ì•„ë¦¬ì›€ ì½”ì—‘ìŠ¤");
 		driver.findElement(By.xpath("//div[@id='header']/div[1]/fieldset/button")).click();
 		driver.findElement(By.xpath("//div[@id='panel']/div[2]/div[1]/div[2]/div[2]/ul/li[1]/div[1]/dl/dt/a")).click();
 		
 		Assert.assertTrue(driver.findElement(By.xpath("//div[@id='naver_map']/div[2]/div[7]/a")).isEnabled());
-		System.out.println("ÄÚ¿¢½º ¾ÆÄí¾Æ¸®¿ò ½Ç³»Áöµµ È°¼ºÈ­ OK");
+		System.out.println("ì½”ì—‘ìŠ¤ ì•„ì¿ ì•„ë¦¬ì›€ ì‹¤ë‚´ì§€ë„ í™œì„±í™” OK");
 		
 		zoominBtn.click();
 		zoominBtn.click();
 		
 		driver.findElement(By.id("search-input")).clear();
-		driver.findElement(By.id("search-input")).sendKeys("Ä²°ñ Çö´ë¹éÈ­Á¡ ¹«¿ª¼¾ÅÍÁ¡");
+		driver.findElement(By.id("search-input")).sendKeys("ìº‰ê³¨ í˜„ëŒ€ë°±í™”ì  ë¬´ì—­ì„¼í„°ì ");
 		driver.findElement(By.xpath("//div[@id='header']/div[1]/fieldset/button")).click();
 		
 		driver.findElement(By.xpath("//div[@id='naver_map']/div[1]/div[10]/div[3]/div/div/div[1]/div[2]/div[2]/a")).click();
 		
 		Thread.sleep(3000);	
-		//¾÷Ã¼ »ó¼¼ ÆäÀÌÁö ¿ÀÇÂ 	
+		//ì—…ì²´ ìƒì„¸ í˜ì´ì§€ ì˜¤í”ˆ 	
 		for(String winHandle : driver.getWindowHandles()){
 			driver.switchTo().window(winHandle);
 			driver.manage().window().maximize();
@@ -138,7 +122,7 @@ public class TC01_indoor_map {
 		Thread.sleep(3000);	
 		
 		driver.findElement(By.xpath("//div[@id='_title']/h1")).click();
-		//½Ç³»ºä ¹öÆ° Å¬¸¯ 
+		//ì‹¤ë‚´ë·° ë²„íŠ¼ í´ë¦­ 
 		driver.findElement(By.xpath("//div[@id='_title']/div/div[1]/ul/li[1]/a")).click();
 		
 		if(driver.findElement(By.xpath("//div[@id='simplemodal-data']")).isEnabled()){
@@ -148,12 +132,12 @@ public class TC01_indoor_map {
 		Thread.sleep(2000);
 		
 		driver.findElement(By.xpath("//div[@id='naver_map']/div[2]/div[8]/div[1]/a[9]")).click();
-		System.out.println("¹Ì´Ï¸Ê Ãşº° ÀÌµ¿ OK");
+		System.out.println("ë¯¸ë‹ˆë§µ ì¸µë³„ ì´ë™ OK");
 	
 	
 }
 	
-	//¿ìÅ¬¸¯ action
+	//ìš°í´ë¦­ action
 	public void rightClick(WebElement element) {
 		try {
 			Actions action = new Actions(driver).contextClick(element);
@@ -172,14 +156,25 @@ public class TC01_indoor_map {
 		}
 	}
 	
-
+  @BeforeTest
+  public void beforeTest() {
+		System.setProperty("webdriver.ie.driver", "C:\\Users\\Administrator\\Desktop\\jiney\\IEDriverServer.exe");
+		DesiredCapabilities dc = DesiredCapabilities.internetExplorer();
+		dc.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
+		driver = new InternetExplorerDriver(dc);
+		driver.get("http://stg.map.naver.com");
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); 		
+		System.out.println("IE ì˜¤í”ˆ ì„±ê³µ");
+	  
+  }
 
   @AfterTest
   public void afterTest() {
 	  
 	   System.out.println("tearDown");
-	    driver.close();
-	    driver.quit();
+	   // driver.close();
+	    //driver.quit();
   }
 
 }

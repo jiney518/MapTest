@@ -26,7 +26,7 @@ public class TC04_bus_menu {
   @Test
   public void tc009() throws Exception{
 		
-		//¹ö½º ¸Ş´º Å¬¸¯
+		//ë²„ìŠ¤ ë©”ë‰´ í´ë¦­
 		driver.findElement(By.xpath("//div[@id='nav']/ul/li[3]/a")).click();
 		WebElement busNum = driver.findElement(By.xpath("//div[@id='panel']/div[2]/div[1]/div[1]/div/form/div/a[1]"));
 		WebElement busStation = driver.findElement(By.xpath("//div[@id='panel']/div[2]/div[1]/div[1]/div/form/div/a[2]"));
@@ -39,7 +39,7 @@ public class TC04_bus_menu {
 		searchBtn.click();		
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//div[@id='panel']/div[2]/div[1]/div[2]/div[1]/div/div/div[1]/a/span[2]")).click();
-		//ÀÎÃµ±¤¿ª½Ã ¼±ÅÃ
+		//ì¸ì²œê´‘ì—­ì‹œ ì„ íƒ
 		driver.findElement(By.xpath("//div[@id='panel']/div[2]/div[1]/div[2]/div[1]/div/div/div[1]/div/ul/li[3]/a")).click();
 		
 		delResult.click();
@@ -48,81 +48,78 @@ public class TC04_bus_menu {
 		searchBtn.click();		
 		Thread.sleep(2000);
 
-		//ÆäÀÌÁö ³×ºñ°ÔÀÌ¼Ç
+		//í˜ì´ì§€ ë„¤ë¹„ê²Œì´ì…˜
 		driver.findElement(By.xpath("//div[@id='panel']/div[2]/div[1]/div[2]/div[2]/div/div/a[5]")).click();
-		System.out.println("¹ö½º °Ë»ö°á°ú ÆäÀÌÁö ÀÌµ¿");
-		//³ó¾îÃÌ ¼±ÅÃ
+		//ë†ì–´ì´Œ ì„ íƒ
 		driver.findElement(By.xpath("//div[@id='panel']/div[2]/div[1]/div[2]/div[1]/div/div/div[2]/a/span[2]")).click();
 		driver.findElement(By.xpath("//div[@id='panel']/div[2]/div[1]/div[2]/div[1]/div/div/div[2]/div/ul/li[7]/a")).click();	
-		Thread.sleep(3000);
-	
-		
-	 Assert.assertEquals("Ã¹Â÷ 10:35, ¸·Â÷ 10:35, ÀÏ 1È¸ ¿îÇà", driver.findElement
+		Thread.sleep(2000);
+		Assert.assertEquals("ì²«ì°¨ 10:35, ë§‰ì°¨ 10:35, ì¼ 1íšŒ ìš´í–‰", driver.findElement
 				(By.xpath("//div[@id='panel']/div[2]/div[1]/div[2]/div[2]/ul/li[1]/div/div[3]/span")).getText());
 		
-		//ÀüÃ¼À¯Çü ¼±ÅÃ
+		//ì „ì²´ìœ í˜• ì„ íƒ
 		driver.findElement(By.xpath("//div[@id='panel']/div[2]/div[1]/div[2]/div[1]/div/div/div[2]/a/span[2]")).click();
 		driver.findElement(By.xpath("//div[@id='panel']/div[2]/div[1]/div[2]/div[1]/div/div/div[2]/div/ul/li[1]/a")).click();
 		
 		Thread.sleep(2000);
-		//¹ö½º ¹øÈ£ Å¬¸¯
+		//ë²„ìŠ¤ ë²ˆí˜¸ í´ë¦­
 		driver.findElement(By.xpath("//div[@id='panel']/div[2]/div[1]/div[2]/div[2]/ul/li[1]/div/div[1]/a")).click();
 		
 		WebElement zoomBtn = driver.findElement(By.xpath("//div[@id='naver_map']/div[2]/div[2]/div[3]/a[1]"));
 		zoomBtn.click();
 		zoomBtn.click();
 		
-		//ÀüÃ¼³ë¼± Å¬¸¯
+		//ì „ì²´ë…¸ì„  í´ë¦­
 		driver.findElement(By.xpath("//div[@id='aside']/div[3]/div[1]/div[1]/a")).click();
 		
 		Thread.sleep(2000);
 		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(org.openqa.selenium.OutputType.FILE);
 		FileUtils.copyFile(scrFile, new File("C:\\Users\\Administrator\\Desktop\\jiney\\map_scrShot\\bus_all_Line.png"));	
 		
-		//±¤¸í»ç°Å¸®¿ª Å¬¸¯
+		//ê´‘ëª…ì‚¬ê±°ë¦¬ì—­ í´ë¦­
 		driver.findElement(By.xpath("//li[@id='busstop-list-101322']/div/p")).click();
 		Thread.sleep(2000);
-		//¾÷µ¥ÀÌÆ® »õ·Î°íÄ§
+		//ì—…ë°ì´íŠ¸ ìƒˆë¡œê³ ì¹¨
 		driver.findElement(By.xpath("//div[@id='naver_map']/div[1]/div[10]/div[3]/div/div/div[2]/div[1]/a")).click();
-		//°Å¸®ºä Å¬¸¯		
+		//ê±°ë¦¬ë·° í´ë¦­		
 		driver.findElement(By.xpath("//div[@id='naver_map']/div[1]/div[10]/div[3]/div/div/div[1]/div[2]/span[2]/a")).click();
 		driver.findElement(By.xpath("//div[@id='simplemodal-data']/a")).click();
 		Thread.sleep(2000);
 		
-		//Á¤º¸Á¦°ø È®ÀÎ
-		Assert.assertEquals("°æ±âµµ ¹ö½ºÁ¾ÇÕ»óÈ²½Ç", driver.findElement(By.xpath("//div[@id='aside']/div[3]/div[3]/p/span[2]")).getText());
+		//ì •ë³´ì œê³µ í™•ì¸
+		Assert.assertEquals("ê²½ê¸°ë„ ë²„ìŠ¤ì¢…í•©ìƒí™©ì‹¤", driver.findElement(By.xpath("//div[@id='aside']/div[3]/div[3]/p/span[2]")).getText());
 		
-		//·¹ÀÌ¾î ´İ±â
+		//ë ˆì´ì–´ ë‹«ê¸°
 		driver.findElement(By.xpath("//div[@id='aside']/div[3]/a")).click();
 		
-		//¹ö½º Á¤·ùÀå
+		//ë²„ìŠ¤ ì •ë¥˜ì¥
 		busStation.click();
 		driver.findElement(By.xpath("//div[@id='panel']/div[2]/div[1]/div[2]/div[2]/ul/li[1]/div[1]/div[2]/a[1]")).click();
-		//º¸³»±â
+		//ë³´ë‚´ê¸°
 		driver.findElement(By.xpath("//div[@id='panel']/div[2]/div[1]/div[2]/div[2]/ul/li[1]/div[2]/ul/li[3]")).click();
 		
 		zoomBtn.click();
-		//ÀÎ¼â
+		//ì¸ì‡„
 		driver.findElement(By.xpath("//div[@id='naver_map']/div[2]/div[2]/div[5]/a[1]")).click();
 		
-		//Ãâ¹ß 
+		//ì¶œë°œ 
 		driver.findElement(By.xpath("//div[@id='panel']/div[2]/div[1]/div[2]/div[2]/ul/li[1]/div[2]/ul/li[1]/a")).click();
 		driver.findElement(By.xpath("//div[@id='nav']/ul/li[3]/a")).click();
 		
 		delResult.click();
-		Assert.assertEquals("ÃÖ±Ù°Ë»ö", driver.findElement(By.xpath("//div[@id='panel']/div[2]/div[1]/div[2]/div/div[1]/ul/li[1]/a")).getText());
+		Assert.assertEquals("ìµœê·¼ê²€ìƒ‰", driver.findElement(By.xpath("//div[@id='panel']/div[2]/div[1]/div[2]/div/div[1]/ul/li[1]/a")).getText());
 		
-		input.sendKeys("Áß¾Óµ¿");
+		input.sendKeys("ì¤‘ì•™ë™");
 		input.sendKeys(Keys.ENTER);
 		Thread.sleep(2000);
-		//¹ö½ºÁ¤·ùÀå Áßº¹Áö¿ª¸í
+		//ë²„ìŠ¤ì •ë¥˜ì¥ ì¤‘ë³µì§€ì—­ëª…
 		driver.findElement(By.xpath("//div[@id='panel']/div[2]/div[1]/div[2]/div[1]/div/div/div/a/span[2]")).click();
 		driver.findElement(By.xpath("//div[@id='panel']/div[2]/div[1]/div[2]/div[1]/div/div/div/div/ul/li[3]/a")).click();
 		
 		driver.findElement(By.xpath("//div[@id='nav']/ul/li[1]/a")).click();
 		driver.findElement(By.xpath("//div[@id='nav']/ul/li[3]/a")).click();
-		Assert.assertEquals("'°æ±âµµ ¼º³²½Ã Áß¿ø±¸ Áß¾Óµ¿'", driver.findElement(By.xpath("//div[@id='panel']/div[2]/div[1]/div[2]/div[1]/div/h4/strong")).getText());
-		System.out.println("¹ö½º Á¤·ùÀå Áßº¹Áö¿ª¸í ÀÌµ¿");
+		Assert.assertEquals("'ê²½ê¸°ë„ ì„±ë‚¨ì‹œ ì¤‘ì›êµ¬ ì¤‘ì•™ë™'", driver.findElement(By.xpath("//div[@id='panel']/div[2]/div[1]/div[2]/div[1]/div/h4/strong")).getText());
+		
 		
 	}
 	
@@ -136,7 +133,7 @@ public class TC04_bus_menu {
 		driver.get("http://stg.map.naver.com");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); 		
-		System.out.println("IE ¿ÀÇÂ ¼º°ø");
+		System.out.println("IE ì˜¤í”ˆ ì„±ê³µ");
 				
 	}
 	
