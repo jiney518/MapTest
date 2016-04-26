@@ -2,36 +2,36 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="152751" started-at="2016-04-14T08:27:45Z" finished-at="2016-04-14T08:30:18Z">
+  <suite name="Suite" duration-ms="156458" started-at="2016-04-26T06:46:58Z" finished-at="2016-04-26T06:49:35Z">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="67925" started-at="2016-04-14T08:27:45Z" finished-at="2016-04-14T08:28:53Z">
+    <test name="Test1" duration-ms="65996" started-at="2016-04-26T06:46:58Z" finished-at="2016-04-26T06:48:04Z">
       <class name="example.TC01_indoor_map">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.TC01_indoor_map@246ae04d]" name="beforeTest" is-config="true" duration-ms="7415" started-at="2016-04-14T17:27:45Z" finished-at="2016-04-14T17:27:52Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.TC01_indoor_map@3fb6a447]" name="beforeTest" is-config="true" duration-ms="5376" started-at="2016-04-26T15:46:58Z" finished-at="2016-04-26T15:47:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="tc001()[pri:0, instance:example.TC01_indoor_map@246ae04d]" name="tc001" duration-ms="58695" started-at="2016-04-14T17:27:52Z" finished-at="2016-04-14T17:28:51Z">
+        <test-method status="PASS" signature="tc001()[pri:0, instance:example.TC01_indoor_map@3fb6a447]" name="tc001" duration-ms="58780" started-at="2016-04-26T15:47:04Z" finished-at="2016-04-26T15:48:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc001 -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:example.TC01_indoor_map@246ae04d]" name="afterTest" is-config="true" duration-ms="1806" started-at="2016-04-14T17:28:51Z" finished-at="2016-04-14T17:28:53Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:example.TC01_indoor_map@3fb6a447]" name="afterTest" is-config="true" duration-ms="1831" started-at="2016-04-26T15:48:02Z" finished-at="2016-04-26T15:48:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- example.TC01_indoor_map -->
     </test> <!-- Test1 -->
-    <test name="Test2" duration-ms="84804" started-at="2016-04-14T08:28:53Z" finished-at="2016-04-14T08:30:18Z">
+    <test name="Test2" duration-ms="90425" started-at="2016-04-26T06:48:04Z" finished-at="2016-04-26T06:49:35Z">
       <class name="example.TC04_bus_menu">
-        <test-method status="PASS" signature="openBrower()[pri:0, instance:example.TC04_bus_menu@234bef66]" name="openBrower" is-config="true" duration-ms="4272" started-at="2016-04-14T17:28:53Z" finished-at="2016-04-14T17:28:57Z">
+        <test-method status="PASS" signature="openBrower()[pri:0, instance:example.TC04_bus_menu@3a03464]" name="openBrower" is-config="true" duration-ms="5844" started-at="2016-04-26T15:48:04Z" finished-at="2016-04-26T15:48:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrower -->
-        <test-method status="PASS" signature="tc009()[pri:0, instance:example.TC04_bus_menu@234bef66]" name="tc009" duration-ms="78703" started-at="2016-04-14T17:28:57Z" finished-at="2016-04-14T17:30:16Z">
+        <test-method status="PASS" signature="tc009()[pri:0, instance:example.TC04_bus_menu@3a03464]" name="tc009" duration-ms="82744" started-at="2016-04-26T15:48:10Z" finished-at="2016-04-26T15:49:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc009 -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:example.TC04_bus_menu@234bef66]" name="afterTest" is-config="true" duration-ms="1828" started-at="2016-04-14T17:30:16Z" finished-at="2016-04-14T17:30:18Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:example.TC04_bus_menu@3a03464]" name="afterTest" is-config="true" duration-ms="1837" started-at="2016-04-26T15:49:33Z" finished-at="2016-04-26T15:49:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
